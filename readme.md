@@ -17,13 +17,13 @@
 
 ### Load
 
-// Commonjs
-var ImagesLoader = require('images-loader')
+    // Commonjs
+    var ImagesLoader = require('images-loader')
 
-// Global
-var ImagesLoader = window.ImagesLoader
+    // Global
+    var ImagesLoader = window.ImagesLoader
 
-### Create instance `loader = new ImagesLoder([options])`
+### Create instance `new ImagesLoder([options])`
 
 Options:
 
