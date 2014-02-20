@@ -1,0 +1,30 @@
+{
+  "name": "images-loader",
+  "description": "Ultra performant dependences free images loader",
+  "version": "0.1.0",
+  "author": {
+    "name": "Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kof/images-loader.git"
+  },
+  "keywords": [
+    "image",
+    "images",
+    "loader",
+    "preloader",
+    "browser",
+    "batch",
+    "queue",
+    "pool"
+  ],
+  "main": "build/ImagesLoader.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
