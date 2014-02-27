@@ -32,6 +32,8 @@ function ImagesLoader(options) {
 
 }
 
+ImagesLoader.emptyGif = 'data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs='
+
 module.exports = ImagesLoader
 
 /**
@@ -113,7 +115,10 @@ ImagesLoader.prototype._load = function(img, url) {
 
         // If you don't clean up the src attr, next time when you assign the
         // same url, no events will be triggered.
-        img.src = img.onerror = img.onload = null
+        img.onerror = img.onload = null
+        // If you assign null or undefined - it will cast it to string
+        // and try to load from there.
+        img.src = ImagesLoader.emptyGif
         // Make img available in the pool again.
         self._pool.push(img)
         if (timeoutId) clearTimeout(timeoutId)
