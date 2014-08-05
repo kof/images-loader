@@ -1,7 +1,7 @@
 {
     name: 'images-loader',
     description: 'Ultra performant dependences free images loader',
-    version: '0.1.1',
+    version: '0.1.2',
     author: {
         name: 'Oleg Slobodskoi',
         email: 'oleg008@gmail.com'
@@ -11,7 +11,7 @@
         url: 'git@github.com:kof/images-loader.git'
     },
     keywords: ['image', 'images', 'loader', 'preloader', 'browser', 'batch', 'queue', 'pool'],
-    main: 'build/ImagesLoader.js',
+    main: './index.js',
     licenses: [
         {
            type: 'MIT',
